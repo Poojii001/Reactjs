@@ -32,7 +32,7 @@ import { Component } from "react";
 //         <h1>Regular Functinal Component</h1>
 //     )
 // }
-
+ 
 //Annoymous Function 
 
 // var Test = function () {
