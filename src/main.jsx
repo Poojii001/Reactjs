@@ -1,13 +1,25 @@
 
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import StateExample from './Components/StateExample'
+import ArrayOfObject from './Components/ArrayOfObject'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <StateExample/>
+    <ArrayOfObject/>
   </StrictMode>,
 )
+
+
+
+// import { StrictMode } from 'react';
+// import { createRoot } from 'react-dom/client';
+// import StateExample from './Components/StateExample'
+
+// createRoot(document.getElementById('root')).render(
+//   <StrictMode>
+//     <StateExample/>
+//   </StrictMode>,
+// )
 
 
 // import { StrictMode } from 'react';
