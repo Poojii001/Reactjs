@@ -1,13 +1,24 @@
-
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import ArrayOfObject from './Components/ArrayOfObject'
+import Parent from './Components/SendDataPC/Parent'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ArrayOfObject/>
+    <Parent/>
   </StrictMode>,
 )
+
+
+
+// import { StrictMode } from 'react';
+// import { createRoot } from 'react-dom/client';
+// import ArrayOfObject from './Components/ArrayOfObject'
+
+// createRoot(document.getElementById('root')).render(
+//   <StrictMode>
+//     <ArrayOfObject/>
+//   </StrictMode>,
+// )
 
 
 
