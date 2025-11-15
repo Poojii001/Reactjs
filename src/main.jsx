@@ -1,12 +1,24 @@
-import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
-import Parent from './Components/SendDataPC/Parent'
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import CssExample from './Components/CssExampmle'
 
+import "./assets/css/style.css"  // for whole application
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Parent/>
+    <CssExample />
   </StrictMode>,
 )
+
+
+// import { StrictMode } from 'react';
+// import { createRoot } from 'react-dom/client';
+// import Parent from './Components/SendDataPC/Parent'
+
+// createRoot(document.getElementById('root')).render(
+//   <StrictMode>
+//     <Parent/>
+//   </StrictMode>,
+// )
 
 
 
