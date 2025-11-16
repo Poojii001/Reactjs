@@ -2,20 +2,21 @@ import React, { useState } from 'react'
 
 export default function InputExample() {
   let [data, setData] = useState({
-    name     : "",
-    email  : "",
-    phone  : "",
-    designation  : "",
-    salary  : "",
-    city  : "",
-    state  : "",
+    name: "",
+    email: "",
+    phone: "",
+    designation: "",
+    salary: "",
+    city: "",
+    state: "",
   })
 
   function getInputData(e) {
-    let{name,value} = e.target
-    setData({...data,[name]: value})
+    let { name, value } = e.target
+    setData({ ...data, [name]: value })
   }
-  function postData() {
+  function postData(e) {
+    preventDefault()
     alert(`
         Name        :   ${data.name}
         Email       :   ${data.email}
@@ -26,31 +27,88 @@ export default function InputExample() {
         State       :   ${data.state}
       `)
   }
+
   return (
     <>
-      <div className="main">
-        <div classNmae="center">
-          <h1>Input Example</h1>
-          <h2>Name : {data.name}</h2>
-          <h2>Email : {data.email}</h2>
-          <h2>Phone : {data.phone}</h2>
-          <h2>Designation : {data.designation}</h2>
-          <h2>Salary : {data.salary}</h2>
-          <h2>City : {data.city}</h2>
-          <h2>State : {data.state}</h2>
-          <input type="text" name="name" onChange={getInputData}placeholder='Full Name' />
-          <input type="email" name="email" onChange={getInputData} placeholder='Full Email' />
-          <input type="text" name="phone" onChange={getInputData} placeholder='Full Number' />
-          <input type="text" name="designation" onChange={getInputData} placeholder='Full dsg' />
-          <input type="number" name="salary" onChange={getInputData} placeholder='Full Salary' />
-          <input type="text" name="city" onChang={getInputData} placeholder='Full City' />
-          <input type="text" name="state" onChange={getInputData} placeholder='Full Address' />
-          <button onClick={postData}>Submit</button>
+      <form onSubmit={postData}>
+        <div className="main">
+          <div classNmae="center">
+            <h1>Input Example</h1>
+            <h2>Name : {data.name}</h2>
+            <h2>Email : {data.email}</h2>
+            <h2>Phone : {data.phone}</h2>
+            <h2>Designation : {data.designation}</h2>
+            <h2>Salary : {data.salary}</h2>
+            <h2>City : {data.city}</h2>
+            <h2>State : {data.state}</h2>
+            <input type="text" name="name" onChange={getInputData} required placeholder='Full Name' />
+            <input type="email" name="email" onChange={getInputData} required placeholder='Full Email' />
+            <input type="text" name="phone" onChange={getInputData} required placeholder='Full Number' />
+            <input type="text" name="designation" onChange={getInputData} required placeholder='Full dsg' />
+            <input type="number" name="salary" onChange={getInputData} required placeholder='Full Salary' />
+            <input type="text" name="city" onChang={getInputData} placeholder='Full City' />
+            <input type="text" name="state" onChange={getInputData} placeholder='Full Address' />
+            <button type="submit">Submit</button>
+          </div>
         </div>
-      </div>
+      </form>
     </>
   )
 }
+
+// import React, { useState } from 'react'
+
+// export default function InputExample() {
+//   let [data, setData] = useState({
+//     name     : "",
+//     email  : "",
+//     phone  : "",
+//     designation  : "",
+//     salary  : "",
+//     city  : "",
+//     state  : "",
+//   })
+
+//   function getInputData(e) {
+//     let{name,value} = e.target
+//     setData({...data,[name]: value})
+//   }
+//   function postData() {
+//     alert(`
+//         Name        :   ${data.name}
+//         Email       :   ${data.email}
+//         Phone       :   ${data.phone}
+//         Designation    :   ${data.designation}
+//         Salary      :   ${data.salary}
+//         City        :   ${data.city}
+//         State       :   ${data.state}
+//       `)
+//   }
+//   return (
+//     <>
+//       <div className="main">
+//         <div classNmae="center">
+//           <h1>Input Example</h1>
+//           <h2>Name : {data.name}</h2>
+//           <h2>Email : {data.email}</h2>
+//           <h2>Phone : {data.phone}</h2>
+//           <h2>Designation : {data.designation}</h2>
+//           <h2>Salary : {data.salary}</h2>
+//           <h2>City : {data.city}</h2>
+//           <h2>State : {data.state}</h2>
+//           <input type="text" name="name" onChange={getInputData}placeholder='Full Name' />
+//           <input type="email" name="email" onChange={getInputData} placeholder='Full Email' />
+//           <input type="text" name="phone" onChange={getInputData} placeholder='Full Number' />
+//           <input type="text" name="designation" onChange={getInputData} placeholder='Full dsg' />
+//           <input type="number" name="salary" onChange={getInputData} placeholder='Full Salary' />
+//           <input type="text" name="city" onChang={getInputData} placeholder='Full City' />
+//           <input type="text" name="state" onChange={getInputData} placeholder='Full Address' />
+//           <button onClick={postData}>Submit</button>
+//         </div>
+//       </div>
+//     </>
+//   )
+// }
 
 
 
