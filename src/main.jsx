@@ -1,11 +1,12 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import CssExample from './Components/CssExampmle'
+import ImageExample from './Components/ImageExample'
 
 import "./assets/css/style.css"  // for whole application
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <CssExample />
+    {/* <CssExample /> */}
+    <ImageExample/>
   </StrictMode>,
 )
 
