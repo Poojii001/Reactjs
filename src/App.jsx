@@ -17,7 +17,7 @@ export default function App() {
        <Routes>
           <Route path='' element={<HomePage/>}/>    
           <Route path='/about' element={<AboutPage/>}/>    
-          <Route path='/Profile' element={<ProfilePage/>}/>    
+          <Route path='/Profile/:name?/:dsg?/:salary' element={<ProfilePage/>}/>    
           <Route path='/contact' element={<ContactUsPage/>}/>    
           <Route path='/*' element={<ErrorPage/>}/>    
        </Routes>

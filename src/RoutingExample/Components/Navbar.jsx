@@ -7,8 +7,8 @@ export default function Navbar() {
     <ul>
         <li><NavLink to="">Home</NavLink></li>
         <li><NavLink to="/about">About</NavLink></li>
-        <li><NavLink to="/profile">Profile</NavLink></li>
-        <li><NavLink to="/contact">Contact</NavLink></li>
+        <li><NavLink to="/profile/Pooja%20Pal/Trainer/134000">Profile</NavLink></li>
+        <li><NavLink to="/contact?name=Pooja%20Pal&email=poojapal@gmail.com&phone=9506580566">Contact</NavLink></li>
     </ul>
    </>
   )
