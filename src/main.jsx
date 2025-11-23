@@ -2,12 +2,25 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App'
 import "./assets/css/style.css" 
+import BootstrapExample from './Components/BootstrapExample'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App/>
+    <BootstrapExample/>
   </StrictMode>,
 )
+
+
+// import { StrictMode } from 'react'
+// import { createRoot } from 'react-dom/client'
+// import App from './App'
+// import "./assets/css/style.css" 
+
+// createRoot(document.getElementById('root')).render(
+//   <StrictMode>
+//     <App/>
+//   </StrictMode>,
+// )
 
 
 
