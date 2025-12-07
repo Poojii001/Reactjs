@@ -1,14 +1,29 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import UseEffectExample from './Components/HooksExample/UseEffectExample'
-// import MUIExample from "./Components/MUIExample" 
+import Parent from './Components/HooksExample/Parent'
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* <MUIExample/> */}
-    <UseEffectExample/>
+      <Parent/>
+      
   </StrictMode>,
 )
+
+
+// import { StrictMode } from 'react'
+// import { createRoot } from 'react-dom/client'
+// import useMemoExample from './Components/HooksExample/useMemoExample'
+// // import UseEffectExample from './Components/HooksExample/UseEffectExample'
+// // import MUIExample from "./Components/MUIExample" 
+
+// createRoot(document.getElementById('root')).render(
+//   <StrictMode>
+//     {/* <MUIExample/> */}
+//     {/* <UseEffectExample/> */}
+//     <useMemoExample/>
+//   </StrictMode>,
+// )
 
 
 
