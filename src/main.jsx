@@ -1,11 +1,11 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
- import useRExample from './Components/HooksExample/useRefExample'
 
+import useRefExample from './Components/HooksExample/useRefExample'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    
+
     <useRefExample/>
       
   </StrictMode>,
