@@ -1,14 +1,41 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App'
-import "./assets/css/style.css" 
-import BootstrapExample from './Components/BootstrapExample'
+import UseEffectExample from './Components/HooksExample/UseEffectExample'
+// import MUIExample from "./Components/MUIExample" 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BootstrapExample/>
+    {/* <MUIExample/> */}
+    <UseEffectExample/>
   </StrictMode>,
 )
+
+
+
+
+// import { StrictMode } from 'react'
+// import { createRoot } from 'react-dom/client'
+// import MUIExample from "./Components/MUIExample" 
+
+// createRoot(document.getElementById('root')).render(
+//   <StrictMode>
+//     <MUIExample/>
+//   </StrictMode>,
+// )
+
+
+
+// import { StrictMode } from 'react'
+// import { createRoot } from 'react-dom/client'
+// import App from './App'
+// import "./assets/css/style.css" 
+// import BootstrapExample from './Components/BootstrapExample'
+
+// createRoot(document.getElementById('root')).render(
+//   <StrictMode>
+//     <BootstrapExample/>
+//   </StrictMode>,
+// )
 
 
 // import { StrictMode } from 'react'

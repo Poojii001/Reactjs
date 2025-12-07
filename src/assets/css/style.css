@@ -1,6 +1,6 @@
-* {
+/* * {
     margin: 0;
-}
+} */
 
 /* .main { */
     /* width: 80vw;
@@ -44,7 +44,7 @@ button {
     margin-left: 50px;
 } */
 
-ul{
+/* ul{
     list-style: none;
     background-color: blue;
     padding: 10px;
@@ -60,4 +60,9 @@ a{
 } 
 .active{
     border-bottom: 2px solid white;
+} */
+
+
+.background{
+    background: linear-gradient(to right,blueviolet,navy,blue);
 }
