@@ -1,15 +1,28 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import Parent from './Components/HooksExample/Parent'
 
-import useRefExample from './Components/HooksExample/useRefExample'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
 
-    <useRefExample/>
+    <Parent/>
       
   </StrictMode>,
 )
+
+// import { StrictMode } from 'react'
+// import { createRoot } from 'react-dom/client'
+
+// import useRefExample from './Components/HooksExample/useRefExample'
+
+// createRoot(document.getElementById('root')).render(
+//   <StrictMode>
+
+//     <useRefExample/>
+      
+//   </StrictMode>,
+// )
 
 // import { StrictMode } from 'react'
 // import { createRoot } from 'react-dom/client'
